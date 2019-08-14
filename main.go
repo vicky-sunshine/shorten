@@ -49,8 +49,8 @@ func NewResolver(client *goredis.Client) *Resolver {
 		engine: gin.Default(),
 	}
 
-	r.engine.GET("/:shorthex", func(c *gin.Context) {
-		hex := c.Param("shorthex")
+	r.engine.GET("/:shortid", func(c *gin.Context) {
+		hex := c.Param("shortid")
 		origin, err := r.GetOriginURL(hex)
 
 		if err != nil {

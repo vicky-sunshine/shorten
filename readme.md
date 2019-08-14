@@ -15,9 +15,9 @@ Use go and redis to implement basic shorten url service.
 
 ## API
 
-### GET `/:shorthex`
+### GET `/:shortid`
 
-Given a short hex, it will redirect to target url if found.
+Given a short id, it will redirect to target url if found.
 If not found, it will return 400.
 
 ### POST `/shorten`
